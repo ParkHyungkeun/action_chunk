@@ -1,0 +1,129 @@
+{
+  "checkpoint": "../../checkpoints/groot_n15_libero_long",
+  "expected_revision": "60d17530d82ea9f9280c89a6821a759131bddbfc",
+  "output_root": "results",
+  "hmm_model": "artifacts/hmm_selected.npz",
+  "suite": "libero_10",
+  "task_ids": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "observation_size": 360,
+  "horizon": 16,
+  "fixed_chunk": 16,
+  "collection_chunk": 10,
+  "min_chunk": 5,
+  "cpu_threads": 4,
+  "seeds": {
+    "smoke": 1200,
+    "collect": 21200,
+    "validation": 31200,
+    "test": 41200
+  },
+  "initial_states": {
+    "smoke": [
+      0
+    ],
+    "collect": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "validation": [
+      20,
+      21,
+      22,
+      23,
+      24
+    ],
+    "test": [
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44
+    ]
+  },
+  "aac": {
+    "mode": "author_code_adapted",
+    "samples": 20,
+    "ridge": 1e-06,
+    "min_chunk": 1,
+    "movement_threshold": 3.0
+  },
+  "hmm": {
+    "states": 5,
+    "iterations": 40,
+    "restarts": 3,
+    "seed": 731,
+    "variance_floor": 0.02,
+    "stay_threshold": 0.6
+  },
+  "threshold": {
+    "change_threshold": 0.05,
+    "selected_from_validation": true
+  },
+  "random_matched": {
+    "lengths": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      13,
+      14,
+      15,
+      16
+    ],
+    "probabilities": [
+      0.8901287553648068,
+      0.007725321888412017,
+      0.008583690987124463,
+      0.008583690987124463,
+      0.017167381974248927,
+      0.014592274678111588,
+      0.0017167381974248926,
+      0.0017167381974248926,
+      0.0017167381974248926,
+      0.022317596566523604,
+      0.02575107296137339
+    ],
+    "source": "heldout_hmm_chunk_distribution_excluding_terminal_remainders_excluding_terminal_remainders",
+    "source_plan_sha256": "f9dfde16b66bdf4141fd6d1b7c2cbbabe3e08a104faa4dbd4f2ce65f87cd5672"
+  },
+  "reviews": {
+    "tokenizer_reviewed": true,
+    "preprocessing_reviewed": true,
+    "aac_port_reviewed": true,
+    "validation_reviewed": true,
+    "notes": "Tokenizer/AAC/preprocessing source audits complete. Validation reviewed: 9 methods x 50 paired cases; complete, unique, zero runtime errors; checkpoint, environment, and code identities agree."
+  },
+  "test_repeats": 3
+}
