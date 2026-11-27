@@ -17,3 +17,9 @@ From a suite directory, inspect `python experiment.py --help` for the preflight,
 ## Conference paper
 
 [VLA 행동 청크의 변화 경계 추정 및 제어 성능에 관한 실험적 분석 (DOCX)](papers/멀티미디어학회_2026_10월_논문.docx)
+
+## Acknowledgment
+
+이 연구는 2026년도 정부(과학기술정보통신부)의 재원으로 정보통신기획평가원의 지원을 받아 수행된 연구임 (No.RS-2019-II190421, 인공지능대학원지원(성균관대학교))
+
+This work was supported by the Institute of Information & Communications Technology Planning & Evaluation (IITP) grant funded by the Korea government (MSIT) in 2026 (No.RS-2019-II190421, Artificial Intelligence Graduate School Program (Sungkyunkwan University)).
